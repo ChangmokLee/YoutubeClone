@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>YouTube Clone</title>
+</head>
+
+<body>
+  <header>
+    <h1>YouTube Clone</h1>
+    <div id="user-info">
+      <span>Welcome, Guest!</span>
+      <button id="login-btn">Login</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="video-container">
+      <iframe id="video-player" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <div id="comments-container">
+      <h2>Comments</h2>
+      <select id="comment-sort">
+        <option value="recent">Most Recent</option>
+        <option value="liked">Most Liked</option>
+        <option value="replied">Most Replied</option>
+      </select>
+      <form id="comment-form">
+        <textarea id="comment-input" placeholder="Write a comment..."></textarea>
+        <button id="comment-btn">Comment</button>
+      </form>
+      <ul id="comments-list"></ul>
+    </div>
+
+    <div id="likes-container">
+      <button id="like-btn">Like</button>
+      <span id="like-count">0</span>
+    </div>
+
+    <div id="video-sharing">
+        <button id="share-btn">Share</button>
+        <input type="text" id="video-link-input" readonly>
+      </div>
+      
+      
+  </main>
+
+  <footer>
+    &copy; 2023 YouTube Clone
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
